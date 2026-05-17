@@ -15,11 +15,11 @@ To capture specific DNS traffic, a manual query was initiated using the command-
 
 Bash
 nslookup google.com
-[!NOTE]
 Insert a description of the terminal output here (e.g., the local DNS server used and the resolved IPv4/IPv6 addresses).
 
 📸 Screenshot: Terminal Execution
-(Replace with your screenshot path)
+Wireshark_-_Network_Analysis
+/images/Wireshark (Nslookup).png
 
 2. Packet Capture & Filtering in Wireshark
 A live packet capture was started on the active network interface.
