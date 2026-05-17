@@ -48,6 +48,7 @@ Query Name: google.com
 DNS Record Type: A Record (Maps a domain name to an IPv4 address)
 
 📸 Screenshot: DNS Query Packet Details
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
 B. DNS Response (Standard Query Response)
 Packet Number: [e.g., 45]
 
@@ -63,11 +64,4 @@ Answers Section: Contains the resolved IP addresses for google.com.
 Time-to-Live (TTL): [e.g., 300 seconds]
 
 📸 Screenshot: DNS Response Packet Details
-💡 Key Takeaways & Conceptual Analogy
-Think of a DNS A Record like looking up a restaurant's name in a physical phonebook to find its street address.
-
-The Query is you asking: "Where is google.com located?"
-
-The A Record Response is the phonebook returning the exact numerical coordinates: 142.250.XXX.XXX.
-
-Wireshark acts as the security camera recording the exact moment you made the call, verifying that the request and response matched seamlessly using the Transaction ID.
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
