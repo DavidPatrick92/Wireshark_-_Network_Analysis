@@ -22,9 +22,6 @@ This project demonstrates how to capture, filter, and inspect Network Layer and 
 
 ## 🚀 Guided Exercises & Walkthrough
 
-### 📁 Screenshot Directory Structure
-> [!TIP]
-> Before adding your images, create an `images/` folder inside your GitHub repository root. Name your screenshot files cleanly (e.g., `exercise_a_terminal.png`) and drop them there so the paths below link automatically.
 
 ---
 
