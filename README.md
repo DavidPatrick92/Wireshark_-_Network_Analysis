@@ -32,3 +32,17 @@ This project demonstrates how to capture, filter, and inspect Network Layer and 
 2. Executed a targeted query via the local terminal:
    ```bash
    nslookup google.com
+📸 Screenshot:Terminal output showing the resolved IP addresses:
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/nslookup.png">
+
+3. Isolated the traffic in Wireshark using the display filter: dns
+📸 Screenshot:Wireshark packet list with the applied dns filter:
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/DNS%20Response.png">
+
+5. Analyzed the Standard  Query A packet and its matching Standard Query Response.
+📸 Screenshot:Expanded "Domain Name System (response)" detail panel matching the terminal IP output:
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/DNS%20Packet%20Details.png">
+  
+
+
+
