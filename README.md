@@ -1,67 +1,37 @@
-🌐 Wireshark Lab: DNS Packet Analysis
-📝 Project Overview
-This project demonstrates how to capture, filter, and analyze Network Layer and Application Layer traffic using Wireshark. Specifically, this lab focuses on isolating and breaking down a Domain Name System (DNS) lookup triggered via the command line.
+# 🌐 Wireshark Lab: Network Traffic & Protocol Analysis
 
-🛠️ Environment & Tools
-Packet Analyzer: Wireshark
+## 📝 Project Overview
+This project demonstrates how to capture, filter, and inspect Network Layer and Application Layer traffic using **Wireshark**. By generating targeted network traffic on a local machine, this lab breaks down foundational core concepts including **DNS resolution**, the **TCP Three-Way Handshake**, **cleartext credential vulnerabilities**, and **TCP stream reconstruction**.
 
-OS / Terminal: [e.g., Windows Command Prompt / macOS Terminal]
+---
 
-Network Tool: nslookup
+## 🛠️ Environment & Tools
+* **Packet Analyzer:** Wireshark 
+* **Operating System:** [e.g., Windows 11 / macOS / Ubuntu Linux] 
+* **Command Line Utilities:** `nslookup`, PowerShell/Terminal 
 
-🚀 Lab Steps & Walkthrough
-1. Generating Traffic (nslookup)
-To capture specific DNS traffic, a manual query was initiated using the command-line utility nslookup targeting google.com.
+---
 
-Bash
-nslookup google.com
-Insert a description of the terminal output here (e.g., the local DNS server used and the resolved IPv4/IPv6 addresses).
+## 🔍 Key Concepts Covered
+* **Packets & Protocols:** Understanding structure, headers, and payloads.
+* **The TCP 3-Way Handshake:** Analyzing connection states via `SYN`, `SYN-ACK`, and `ACK` flags.
+* **Domain Name System (DNS):** Verifying A-record queries and server responses.
+* **Unencrypted Traffic Risk:** Spotting cleartext credentials over standard HTTP.
 
-📸 Screenshot: Terminal Execution
-<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
+---
 
-2. Packet Capture & Filtering in Wireshark
-A live packet capture was started on the active network interface.
+## 🚀 Guided Exercises & Walkthrough
 
-Once the traffic was generated, the capture was stopped.
+### 📁 Screenshot Directory Structure
+> [!TIP]
+> Before adding your images, create an `images/` folder inside your GitHub repository root. Name your screenshot files cleanly (e.g., `exercise_a_terminal.png`) and drop them there so the paths below link automatically.
 
-The display filter bar was used to isolate only DNS traffic:
+---
 
-Plaintext
-dns
-📸 Screenshot: Wireshark Main Capture Window
-🔍 Deep-Dive Packet Analysis
-A. DNS Query (Standard Query)
-Packet Number: [e.g., 42]
+### 🔹 Exercise A — Capture a DNS Lookup
+**Objective:** Generate a manual DNS query using the `nslookup` command-line utility and capture the A-record query and response within Wireshark.
 
-Source IP: [Your Local IP] ➡️ Destination IP: [Your DNS Server IP]
-
-Protocol: UDP | Source Port: [e.g., 53214] ➡️ Destination Port: 53
-
-Info Summary: Standard query 0x1234 A google.com
-
-Key Details Formatted:
-Transaction ID: 0x....
-
-Query Name: google.com
-
-DNS Record Type: A Record (Maps a domain name to an IPv4 address)
-
-📸 Screenshot: DNS Query Packet Details
-<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
-B. DNS Response (Standard Query Response)
-Packet Number: [e.g., 45]
-
-Source IP: [Your DNS Server IP] ➡️ Destination IP: [Your Local IP]
-
-Protocol: UDP | Source Port: 53 ➡️ Destination Port: [e.g., 53214]
-
-Info Summary: Standard query response 0x1234 A google.com
-
-Key Details Formatted:
-Answers Section: Contains the resolved IP addresses for google.com.
-
-Time-to-Live (TTL): [e.g., 300 seconds]
-
-📸 Screenshot: DNS Response Packet Details
-<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
+1. Initiated a live capture on the active network interface in Wireshark.
+2. Executed a targeted query via the local terminal:
+   ```bash
+   nslookup google.com
