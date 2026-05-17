@@ -18,8 +18,7 @@ nslookup google.com
 Insert a description of the terminal output here (e.g., the local DNS server used and the resolved IPv4/IPv6 addresses).
 
 📸 Screenshot: Terminal Execution
-Wireshark_-_Network_Analysis
-/images/Wireshark (Nslookup).png
+<img width="1000" alt="image" src="https://github.com/DavidPatrick92/Wireshark_-_Network_Analysis/blob/main/images/Wireshark%20(Nslookup).png">
 
 2. Packet Capture & Filtering in Wireshark
 A live packet capture was started on the active network interface.
